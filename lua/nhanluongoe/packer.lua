@@ -29,6 +29,7 @@ return require("packer").startup(function(use)
 	use("theprimeagen/harpoon")
 	use("mbbill/undotree")
 	use("tpope/vim-fugitive")
+	use("tpope/vim-surround")
 
 	use({
 		"VonHeikemen/lsp-zero.nvim",
@@ -66,4 +67,10 @@ return require("packer").startup(function(use)
 	-- formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+
+	-- commenting
+	use("numToStr/Comment.nvim")
+
+	-- split window navigator
+	use("christoomey/vim-tmux-navigator")
 end)
