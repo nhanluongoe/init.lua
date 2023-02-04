@@ -73,4 +73,10 @@ return require("packer").startup(function(use)
 
 	-- split window navigator
 	use("christoomey/vim-tmux-navigator")
+
+	-- file explorer
+	use("nvim-tree/nvim-tree.lua")
+
+	-- file type icon
+	use("nvim-tree/nvim-web-devicons")
 end)
