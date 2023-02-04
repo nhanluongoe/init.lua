@@ -18,7 +18,9 @@ return require("packer").startup(function(use)
 		"rose-pine/neovim",
 		as = "rose-pine",
 		config = function()
-			require("rose-pine").setup()
+			require("rose-pine").setup({
+				dark_variant = "moon",
+			})
 			vim.cmd("colorscheme rose-pine")
 		end,
 	})
@@ -51,10 +53,15 @@ return require("packer").startup(function(use)
 		},
 	})
 
+	-- bottom information line
 	use({
 		"nvim-lualine/lualine.nvim",
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
 	})
+
+	-- auto closing
+	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
+	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
 	-- formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
