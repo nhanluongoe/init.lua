@@ -86,6 +86,13 @@ return require("packer").startup(function(use)
 
 	-- split window navigator
 	use("christoomey/vim-tmux-navigator")
+	use({
+		"akinsho/toggleterm.nvim",
+		tag = "*",
+		config = function()
+			require("toggleterm").setup()
+		end,
+	})
 
 	-- file explorer
 	use("nvim-tree/nvim-tree.lua")
