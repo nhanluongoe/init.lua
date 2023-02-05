@@ -37,7 +37,6 @@ return require("packer").startup(function(use)
 	use("mbbill/undotree")
 
 	-- git-related
-	use("tpope/vim-fugitive")
 	use("lewis6991/gitsigns.nvim")
 
 	-- handle surroundings: parentheses, brackets, quotes, XML tags, and more
