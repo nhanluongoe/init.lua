@@ -35,7 +35,6 @@ return require("packer").startup(function(use)
 				style = "darker",
 			})
 			vim.cmd("colorscheme onedark")
-			vim.cmd("highlight VertSplit guibg=bg guifg=bg")
 		end,
 	})
 

@@ -7,3 +7,9 @@ function ColorMyPencils(color)
 end
 
 ColorMyPencils()
+
+function HideSplitBorder()
+	vim.cmd("highlight VertSplit guibg=bg guifg=#1E232A")
+end
+
+HideSplitBorder()
