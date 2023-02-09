@@ -16,14 +16,26 @@ return require("packer").startup(function(use)
 	})
 
 	-- color scheme
+	-- use({
+	-- 	"rose-pine/neovim",
+	-- 	as = "rose-pine",
+	-- 	config = function()
+	-- 		require("rose-pine").setup({
+	-- 			dark_variant = "moon",
+	-- 		})
+	-- 		vim.cmd("colorscheme rose-pine")
+	-- 	end,
+	-- })
+
 	use({
-		"rose-pine/neovim",
-		as = "rose-pine",
+		"navarasu/onedark.nvim",
+		-- as = "rose-pine",
 		config = function()
-			require("rose-pine").setup({
-				dark_variant = "moon",
+			require("onedark").setup({
+				style = "darker",
 			})
-			vim.cmd("colorscheme rose-pine")
+			vim.cmd("colorscheme onedark")
+			vim.cmd("highlight VertSplit guibg=bg guifg=bg")
 		end,
 	})
 
