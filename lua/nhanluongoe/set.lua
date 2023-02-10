@@ -8,6 +8,8 @@ vim.opt.expandtab = true
 
 vim.opt.autoindent = true -- copy indent from current line when starting new one
 
+vim.opt.cursorline = true -- hightligh the current cusor line
+
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
