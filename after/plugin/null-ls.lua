@@ -19,6 +19,7 @@ mason_null_ls.setup({
     "prettier", -- ts/js formatter
     "stylua", -- lua formatter
     "eslint_d", -- ts/js linter
+    "yamlfmt", -- yaml formatter
   },
   -- auto-install configured formatters & linters (with null-ls)
   automatic_installation = true,
@@ -45,6 +46,7 @@ null_ls.setup({
     --  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
     formatting.prettier, -- js/ts formatter
     formatting.stylua, -- lua formatter
+    formatting.yamlfmt,
     diagnostics.eslint_d.with({ -- js/ts linter
       -- only enable eslint if root has .eslintrc.js (not in youtube nvim video)
       condition = function(utils)
