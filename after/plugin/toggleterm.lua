@@ -1,4 +1,11 @@
-local Terminal = require("toggleterm.terminal").Terminal
+
+local terminal_status, terminal = pcall(require, "toggleterm.terminal")
+if not terminal_status then
+  return
+end
+
+local Terminal = terminal.Terminal
+
 local lazygit = Terminal:new({
 	cmd = "lazygit",
 	dir = "git_dir",
