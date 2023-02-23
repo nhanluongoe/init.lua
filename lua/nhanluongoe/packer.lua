@@ -15,22 +15,12 @@ return require("packer").startup(function(use)
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 
-	-- color scheme
 	-- use({
-	-- 	"rose-pine/neovim",
-	-- 	as = "rose-pine",
-	-- 	config = function()
-	-- 		require("rose-pine").setup({
-	-- 			dark_variant = "moon",
-	-- 		})
-	-- 		vim.cmd("colorscheme rose-pine")
-	-- 	end,
+	-- 	"navarasu/onedark.nvim",
+	-- 	as = "onedark",
 	-- })
 
-	use({
-		"navarasu/onedark.nvim",
-		as = "onedark",
-	})
+	use({ "rebelot/kanagawa.nvim", as = "kanagawa" })
 
 	-- syntax highlighting
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
