@@ -1,15 +1,13 @@
--- function ColorMyPencils(color)
--- 	color = color or "onedark"
--- 	vim.cmd.colorscheme(color)
---
--- 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
--- 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
--- end
---
--- ColorMyPencils()
-
-function HideSplitBorder()
-	vim.cmd("highlight VertSplit guibg=bg guifg=#1E232A")
+local status, onedark = pcall(require, 'onedark')
+if not status then
+  return
 end
 
-HideSplitBorder()
+onedark.setup({
+  style = "darker"
+})
+
+vim.cmd("colorscheme onedark")
+
+-- hide split border
+vim.cmd("highlight VertSplit guibg=bg guifg=#1E232A")

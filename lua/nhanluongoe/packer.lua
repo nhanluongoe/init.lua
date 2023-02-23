@@ -29,13 +29,7 @@ return require("packer").startup(function(use)
 
 	use({
 		"navarasu/onedark.nvim",
-		-- as = "rose-pine",
-		config = function()
-			require("onedark").setup({
-				style = "darker",
-			})
-			vim.cmd("colorscheme onedark")
-		end,
+		as = "onedark",
 	})
 
 	-- syntax highlighting
