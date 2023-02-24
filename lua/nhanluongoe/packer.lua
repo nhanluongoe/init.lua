@@ -22,6 +22,9 @@ return require("packer").startup(function(use)
 
 	use({ "rebelot/kanagawa.nvim", as = "kanagawa" })
 
+	-- bufferline
+	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
+
 	-- syntax highlighting
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 
