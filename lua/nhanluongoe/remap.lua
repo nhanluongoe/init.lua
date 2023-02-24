@@ -48,3 +48,6 @@ vim.keymap.set("n", "<leader>pv", ":NvimTreeToggle<CR>")
 
 -- toggle highlight search
 vim.keymap.set("n", "<leader>th", "<cmd>:set hlsearch!<CR>");
+
+-- close buffer
+vim.keymap.set("n", "<leader>bd", "<cmd>:bd<CR>");
