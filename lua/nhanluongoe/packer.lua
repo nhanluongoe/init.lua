@@ -22,6 +22,9 @@ return require("packer").startup(function(use)
 
 	use({ "rebelot/kanagawa.nvim", as = "kanagawa" })
 
+	-- indent indicator
+	use("lukas-reineke/indent-blankline.nvim")
+
 	-- bufferline
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
 
