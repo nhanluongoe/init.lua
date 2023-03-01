@@ -44,7 +44,7 @@ vim.keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 vim.keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
 -- toggle file explorer
-vim.keymap.set("n", "<leader>pv", ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 -- toggle highlight search
 vim.keymap.set("n", "<leader>th", "<cmd>:set hlsearch!<CR>");
