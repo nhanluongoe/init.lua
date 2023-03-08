@@ -25,3 +25,12 @@ end
 
 vim.cmd("colorscheme kanagawa")
 vim.cmd("highlight WinSeparator guifg=#363647")
+vim.cmd("highlight LineNr guibg=none")
+vim.cmd("highlight SignColumn guibg=none")
+vim.cmd("highlight CursorLineNr guibg=none")
+vim.cmd("highlight CursorLineSign guibg=none")
+vim.cmd("highlight GitSignsAdd guibg=none")
+vim.cmd("highlight GitSignsChange guibg=none")
+vim.cmd("highlight GitSignsDelete guibg=none")
+vim.cmd("highlight GitSignsDelete guibg=none")
+vim.cmd("highlight DiagnosticSignHint guibg=none")
