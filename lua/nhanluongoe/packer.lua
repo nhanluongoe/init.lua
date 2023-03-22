@@ -67,6 +67,9 @@ return require("packer").startup(function(use)
 		},
 	})
 
+  -- github copilot
+  use({ "github/copilot.vim" })
+
 	-- bottom information line
 	use({
 		"nvim-lualine/lualine.nvim",
