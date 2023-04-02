@@ -237,6 +237,11 @@ _G.packer_plugins = {
     path = "/Users/nhanluongoe/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/Users/nhanluongoe/.local/share/nvim/site/pack/packer/start/vim-go",
+    url = "https://github.com/fatih/vim-go"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/nhanluongoe/.local/share/nvim/site/pack/packer/start/vim-surround",

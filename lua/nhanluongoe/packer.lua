@@ -102,4 +102,7 @@ return require("packer").startup(function(use)
 
 	-- file type icon
 	use("nvim-tree/nvim-web-devicons")
+
+  -- vim-go
+  use({ "fatih/vim-go", run = ":GoUpdateBinaries" })
 end)
