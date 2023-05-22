@@ -51,3 +51,6 @@ vim.keymap.set("n", "<leader>th", "<cmd>:set hlsearch!<CR>");
 
 -- close all buffers but current buffer
 vim.keymap.set("n", "<leader>bd", "<cmd>:%bd|e#|bd#<CR>");
+
+-- format selected code
+vim.keymap.set("v", "<leader>f", "<cmd>:lua vim.lsp.buf.format()<CR>")
