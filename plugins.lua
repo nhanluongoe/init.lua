@@ -78,6 +78,10 @@ local plugins = {
 
   -- github copilot
   { "github/copilot.vim", lazy = false },
+
+  -- navigate between files
+  {"theprimeagen/harpoon"}
+	-- use("theprimeagen/harpoon")
 }
 
 return plugins
