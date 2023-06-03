@@ -9,6 +9,8 @@
 
 local opt = vim.opt
 
+opt.clipboard = ""
+
 opt.nu = true
 opt.relativenumber = true
 
