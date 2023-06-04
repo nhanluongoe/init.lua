@@ -42,15 +42,10 @@ M.nvimtree = {
   git = {
     enable = true,
   },
-
   renderer = {
     icons = {
-      highlight_git = true,
-      glyphs = {
-        folder = {
-          arrow_closed = "", -- arrow when folder is closed
-          arrow_open = "", -- arrow when folder is open
-        },
+      show = {
+        git = true,
       },
     },
   },
