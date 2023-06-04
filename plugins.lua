@@ -33,10 +33,10 @@ local plugins = {
     opts = overrides.treesitter,
   },
 
-  {
-    "nvim-tree/nvim-tree.lua",
-    opts = overrides.nvimtree,
-  },
+  -- {
+  --   "nvim-tree/nvim-tree.lua",
+  --   opts = overrides.nvimtree,
+  -- },
 
   {
     "lukas-reineke/indent-blankline.nvim",
