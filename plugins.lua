@@ -80,8 +80,10 @@ local plugins = {
   { "github/copilot.vim", lazy = false },
 
   -- navigate between files
-  {"theprimeagen/harpoon"}
-	-- use("theprimeagen/harpoon")
+  { "theprimeagen/harpoon" },
+
+  -- change surround symbols
+  { "tpope/vim-surround" },
 }
 
 return plugins
