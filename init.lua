@@ -40,5 +40,3 @@ opt.isfname:append "@-@"
 opt.updatetime = 50
 
 vim.o.completeopt = "menuone,noselect"
-
-vim.g.copilot_assume_mapped = true
