@@ -102,4 +102,11 @@ M.nvterm = {
   },
 }
 
+M.cmp = {
+  mapping = {
+    ["<Tab>"] = require("cmp").config.disable,
+    ["S-Tab"] = require("cmp").config.disable,
+  },
+}
+
 return M
