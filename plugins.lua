@@ -83,7 +83,7 @@ local plugins = {
   { "theprimeagen/harpoon" },
 
   -- change surround symbols
-  { "tpope/vim-surround" },
+  { "tpope/vim-surround", lazy = false },
 }
 
 return plugins
