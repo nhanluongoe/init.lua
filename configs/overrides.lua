@@ -33,6 +33,7 @@ M.mason = {
     "typescript-language-server",
     "tailwindcss-language-server",
     "prettier",
+    "prettierd",
     "eslint_d",
   },
 }
@@ -107,6 +108,28 @@ M.cmp = {
     ["<Tab>"] = require("cmp").config.disable,
     ["S-Tab"] = require("cmp").config.disable,
   },
+}
+
+local previewers = require('telescope.previewers')
+
+local new_maker = function(filepath, bufnr, opts)
+  opts = opts or {}
+
+  filepath = vim.fn.expand(filepath)
+  vim.loop.fs_stat(filepath, function(_, stat)
+    if not stat then return end
+    if stat.size > 100000 then
+      return
+    else
+      previewers.buffer_previewer_maker(filepath, bufnr, opts)
+    end
+  end)
+end
+
+M.telescope = {
+  defaults = {
+    buffer_previewer_maker = new_maker,
+  }
 }
 
 return M
