@@ -33,7 +33,7 @@ M.window = {
 -- Format code
 M.format = {
   n = {
-    ["<leader>fc"] = { "<cmd> lua vim.lsp.buf.format() <CR>", "Format code", opts = { nowait = true } },
+    ["<leader>fc"] = { "<cmd> lua vim.lsp.buf.format({timeoout_ms = 2000}) <CR>", "Format code", opts = { nowait = true } },
     ["<leader>fe"] = { "<cmd> !yarn eslint --fix %<CR>", "Fix eslint issue", opts = { nowait = true } },
   },
 
