@@ -40,3 +40,10 @@ opt.isfname:append "@-@"
 opt.updatetime = 50
 
 vim.o.completeopt = "menuone,noselect"
+
+-- Stop eslint_d on exit
+local function stop_eslintd_on_exit()
+    vim.api.nvim_command('autocmd VimLeavePre * silent !eslint_d stop')
+end
+
+stop_eslintd_on_exit()
