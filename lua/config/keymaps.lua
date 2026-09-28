@@ -4,3 +4,11 @@
 vim.keymap.set("t", "<C-n>", "<C-\\><C-n>", {
   desc = "Leave terminal mode",
 })
+
+vim.keymap.set("n", "<leader>spv", "<C-w>v", {
+  desc = "Split Vertically",
+})
+
+vim.keymap.set("n", "<leader>sph", "<C-w>s", {
+  desc = "Split Horizontally",
+})
