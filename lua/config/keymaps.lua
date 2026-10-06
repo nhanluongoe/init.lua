@@ -12,3 +12,11 @@ vim.keymap.set("n", "<leader>spv", "<C-w>v", {
 vim.keymap.set("n", "<leader>sph", "<C-w>s", {
   desc = "Split Horizontally",
 })
+
+vim.keymap.set({ "n", "x" }, "<leader>y", '"+y', {
+  desc = "Yank to System Clipboard",
+})
+
+vim.keymap.set("n", "<leader>Y", '"+Y', {
+  desc = "Yank Line to System Clipboard",
+})
